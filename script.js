@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Subtle Scroll Animations
     const revealTargets = document.querySelectorAll(
-        '.about-layout, .founder-grid, .practice-jump-card, .practice-detail-card, .office-card, .contact-form-wrapper'
+        '.about-layout, .founder-grid, .practice-jump-card, .practice-detail-card, .office-card, .team-photo-card, .contact-form-wrapper'
     );
 
     if ('IntersectionObserver' in window) {

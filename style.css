@@ -921,11 +921,54 @@ h1, h2, h3, h4 {
     background: var(--ivory-50);
 }
 
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 28px;
+    align-items: start;
+}
+
 .offices-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px;
-    margin-bottom: 44px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    margin-bottom: 0;
+}
+
+.team-photo-card {
+    background: var(--white);
+    border: 1px solid var(--border-light);
+    border-top: 4px solid var(--gold-500);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    min-width: 0;
+    position: sticky;
+    top: 110px;
+}
+
+.team-photo-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.team-photo-caption {
+    padding: 24px 26px;
+    background: var(--navy-900);
+    color: #cbd5e1;
+    border-top: 2px solid var(--gold-500);
+}
+
+.team-photo-caption h4 {
+    color: var(--white);
+    font-size: 1.25rem;
+    margin-bottom: 6px;
+}
+
+.team-photo-caption p {
+    font-size: 0.92rem;
+    line-height: 1.6;
 }
 
 .office-card {
@@ -1224,12 +1267,14 @@ h1, h2, h3, h4 {
     }
 
     .about-layout,
-    .founder-grid {
-        grid-template-columns: 1fr;
+    .founder-grid,
+    .contact-layout {
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .about-img-frame,
-    .founder-profile-card {
+    .founder-profile-card,
+    .team-photo-card {
         position: static;
     }
 
